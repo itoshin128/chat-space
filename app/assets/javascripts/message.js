@@ -41,6 +41,7 @@ $(() => {
       .fail(() => {
         $(".form__submit").prop("disabled", false);
         $("form")[0].reset();
+        alert("メッセージ送信に失敗しました");
       });
   });
 
@@ -67,7 +68,7 @@ $(() => {
         }
       })
       .fail(() => {
-        alert("error");
+        alert("メッセージ送信に失敗しました");
       });
   };
   const limitedPageLoad = () => {
